@@ -1,0 +1,8 @@
+services:
+  ddns:
+    build: .
+    container_name: ddns
+    restart: always
+    environment:
+      - ZONE=example-com
+      - DOMAIN=example.com

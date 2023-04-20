@@ -1,8 +1,5 @@
 #!/bin/bash
 
-ZONE=md-id-au
-DOMAIN=ha.md.id.au
-
 gcloud auth activate-service-account ddns00@md-id-au.iam.gserviceaccount.com --key-file=gcloud.key.json --project=$ZONE
 
 while true
